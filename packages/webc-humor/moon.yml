@@ -1,0 +1,24 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+
+type: 'library'
+language: 'javascript'
+
+project:
+  name: 'webc-humor'
+  channel: ''
+  description: 'Humorous web components'
+  owner: 'Tane Piper'
+  maintainers: []
+
+tags:
+  - 'web-components'
+
+tasks:
+  dev:
+    local: true
+    command: 'npm run dev'
+  build:
+    command: 'npm run build'
+  watch:
+    local: true
+    command: 'npm run watch'
