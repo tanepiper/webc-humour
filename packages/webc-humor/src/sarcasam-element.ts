@@ -25,11 +25,15 @@ class SarcasamElement extends LitElement {
   @property({ type: String })
   toolTipText = descriptionTemplate.content;
 
+  @property({ type: HTMLTemplateElement })
+  template: HTMLTemplateElement = descriptionTemplate;
+
   static styles = css`
     ${unsafeCSS(componentCss)}
   `;
 
   render() {
+    console.dir(this.template);
     return html`
       ${this.prefix
         ? html`<span class="sarcasam-prefix">${this.prefix}</span>`
@@ -39,7 +43,7 @@ class SarcasamElement extends LitElement {
         ? html`<span class="sarcasam-icon">${this.suffix}</span>`
         : ""}
       ${this.showTooltip
-        ? html`<div class="tooltip">${this.toolTipText}</div>`
+        ? html`<div class="tooltip">${this.template.content.cloneNode(true)}</div>`
         : ""}
     `;
   }

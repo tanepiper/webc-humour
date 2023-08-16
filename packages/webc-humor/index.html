@@ -8,48 +8,104 @@
     <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="/src/satire-element.ts"></script>
     <script type="module" src="/src/sarcasam-element.ts"></script>
-
   </head>
+
+  <header>
+    <div class="header-left">
+      <h1>Visualising Sarcasam and Satire on the Web</h1>
+      <img src="logo.png" alt="Logo" width="64" />
+    </div>
+
+    <nav class="header-right">
+      <ul>
+        <li><a href="https://github.com/tanepiper/webc-humour">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <h1>Visualising Sarcasam and Satire on the Web</h1>
-    <p>
-      We live in a connected world of words. Before the millenium, most people
-      only spoke to people in their local area - and only heard from afar
-      through the mass media of the day - mainly Television
-    </p>
-    <p>
-      As more and more people came online through the 2000's - more an more
-      mis-communication started to happen. The subtle parts of language,
-      particularly English don't always translate well without face-to-face or
-      voice communication
-    </p>
-    <p>
-      Over 20 years ago, people were already asking for a &lt;sarcasam&gt; tag
-      for the web.
-    </p>
-    <p>Well the wait it over! - Today it is here.</p>
-    <h2>How sarcastic can we be?</h2>
-    <img
-      src="https://stochastic-parrot.s3.eu-west-1.amazonaws.com/random/whoops.gif"
-      alt="A gif of Dr House asking a patient to not do something"
-    />
-    <p>
-      Well, adding more useless JavaScript to the web, burning up more of the
-      planet with useless kilobytes -
-      <web-sarcasam>and it's going to be great</web-sarcasam>.
-    </p>
-    <h2>But is it satire?</h2>
-    <img
-      src="https://stochastic-parrot.s3.eu-west-1.amazonaws.com/random/satire.gif"
-      alt="An model of a building on fire with the word SATIRE in bright green flashing on top of it"
-    />
-    <p>
-      Philosophers for centuries will be pondering this very question I ask now?
-    </p>
-    <q>Can a web component be funny?</q>
-    <p>This is <web-satire>total serious</web-satire></p>
+    <main>
+      <section class="hero">
+        <h2>Adding some humour back to the web</h2>
+
+        <div class="hero-text">
+          <div class="row">
+            <div>
+              <web-sarcasam>Sarcasam</web-sarcasam>
+            </div>
+            <div>
+              <web-satire>Satire</web-satire>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p>
+        We live in a connected world of words. Before the 20th Century, most
+        people only spoke to other people within their local area, sometimes
+        only their town or village. News travelled slow, and was filtered
+        through a local lens. But come the 20th Century, mass media allowed for
+        communication from afar culminating in mass media of the day -
+        Television.
+      </p>
+      <p>
+        Just before the turn on the 21st Century, as more and more people came
+        online through the 90's and 00's (Eternal September) - more an more
+        mis-communication started to happen - and peoples' true views started to
+        be expressed.
+      </p>
+      <p>
+        But one of the biggest truisims I belive is that subtle parts of
+        language, particularly English, don't always translate well without
+        face-to-face or voice communication.
+      </p>
+      <p>
+        Over 20 years ago, people were already asking for a &lt;sarcasam&gt; tag
+        for the web.
+      </p>
+      <p>Well the wait it over! - Today it is here.</p>
+
+      <div class="card-row">
+        <div class="card">
+          <h3 class="card-title">How sarcastic can we be?</h3>
+
+          <div class="card-content">
+            <p>
+              Well, adding more useless JavaScript to the web, burning up more
+              of the planet with useless kilobytes -
+              <web-sarcasam>and it's going to be great</web-sarcasam>.
+            </p>
+          </div>
+
+          <div class="card-image">
+            <img
+              src="https://stochastic-parrot.s3.eu-west-1.amazonaws.com/random/whoops.gif"
+              alt="A gif of Dr House asking a patient to not do something"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">But is it satire?</h3>
+
+          <div class="card-content">
+            <p>
+              Philosophers for centuries will be pondering this very question I
+              ask now?
+            </p>
+            <q>Can a web component be funny?</q>
+            <p>This is <web-satire>total serious</web-satire></p>
+          </div>
+
+          <div class="card-image">
+            <img
+              src="https://stochastic-parrot.s3.eu-west-1.amazonaws.com/random/satire.gif"
+              alt="An model of a building on fire with the word SATIRE in bright green flashing on top of it"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
   <footer>
-      Created by <a href="https://tane.dev">Tane Piper</a> | <a href="https://github.com/tanepiper/webc-humour">GitHub</a>
+    Created by <a href="https://tane.dev">Tane Piper</a> |
+    <a href="https://github.com/tanepiper/webc-humour">GitHub</a>
   </footer>
 </html>

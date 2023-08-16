@@ -21,11 +21,13 @@
     padding: var(--sarcasam-tooltip-padding, 0.5rem);
     border-radius: 0.5rem;
     position: absolute;
-    z-index: 1;
+    z-index: 999;
     top: -0.5ch;
-    left: 1ch;
+    left: calc(width / 2);
     opacity: 0;
     transition: opacity 1s;
+    min-width: 40ch;
+    min-height: 10vh;
   }
   
   :host(:hover) .tooltip {
