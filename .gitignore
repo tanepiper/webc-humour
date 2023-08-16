@@ -132,3 +132,6 @@ dist
 # moon
 .moon/cache
 .moon/docker
+
+# Output
+docs/

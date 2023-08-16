@@ -33,6 +33,10 @@ jobs:
         uses: moonrepo/setup-moon-action@v1
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          # Fetches all history for all tags and branches
+          fetch-depth: 0
+          ref: main
       - name: Build Pages
         run: moon run webc-humor:build
       - name: Upload artifact
