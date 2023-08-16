@@ -1,0 +1,56 @@
+:host {
+    display: var(--sarcasam-display, inline);
+    font-family: var(--sarcasam-font-family, Arial, sans-serif);
+    font-style: var(--sarcasam-font-style, italic);
+    font-weight: var(--sarcasam-font-weight, normal);
+    color: var(--sarcasam-color, #686868);
+    position: relative;
+    cursor: cell;
+  }
+  
+  .sarcasam-icon {
+    display: var(--sarcasam-display-icon, inline);
+    margin-left: var(--sarcasam-display-icon-left, 0);
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: var(--sarcasam-tooltip-bg, #555);
+    color: var(--sarcasam-tooltip-color, #fff);
+    text-align: center;
+    padding: var(--sarcasam-tooltip-padding, 0.5rem);
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: -0.5ch;
+    left: 1ch;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  :host(:hover) .tooltip {
+    visibility: visible;
+    opacity: 0.7;
+    animation: wiggle 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
