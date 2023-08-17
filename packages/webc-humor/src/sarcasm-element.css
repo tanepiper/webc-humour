@@ -1,24 +1,24 @@
 :host {
-    display: var(--sarcasam-display, inline);
-    font-family: var(--sarcasam-font-family, Arial, sans-serif);
-    font-style: var(--sarcasam-font-style, italic);
-    font-weight: var(--sarcasam-font-weight, normal);
-    color: var(--sarcasam-color, #686868);
+    display: var(--sarcasm-display, inline);
+    font-family: var(--sarcasm-font-family, Arial, sans-serif);
+    font-style: var(--sarcasm-font-style, italic);
+    font-weight: var(--sarcasm-font-weight, normal);
+    color: var(--sarcasm-color, #686868);
     position: relative;
     cursor: cell;
   }
   
-  .sarcasam-icon {
-    display: var(--sarcasam-display-icon, inline);
-    margin-left: var(--sarcasam-display-icon-left, 0);
+  .sarcasm-icon {
+    display: var(--sarcasm-display-icon, inline);
+    margin-left: var(--sarcasm-display-icon-left, 0);
   }
   
   .tooltip {
     visibility: hidden;
-    background-color: var(--sarcasam-tooltip-bg, #555);
-    color: var(--sarcasam-tooltip-color, #fff);
+    background-color: var(--sarcasm-tooltip-bg, #555);
+    color: var(--sarcasm-tooltip-color, #fff);
     text-align: center;
-    padding: var(--sarcasam-tooltip-padding, 0.5rem);
+    padding: var(--sarcasm-tooltip-padding, 0.5rem);
     border-radius: 0.5rem;
     position: absolute;
     z-index: 999;

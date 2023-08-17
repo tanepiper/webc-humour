@@ -1,18 +1,18 @@
 import { LitElement, css, html, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { default as componentCss } from "./sarcasam-element.css?inline";
+import { default as componentCss } from "./sarcasm-element.css?inline";
 
 const descriptionTemplate = document.createElement("template");
 descriptionTemplate.innerHTML = `
-<p>sarcasam - noun</p>
+<p>sarcasm - noun</p>
 <ol>
   <li>harsh or bitter derision or irony.</li>
   <li>a sharply ironical taunt; sneering or cutting remark.</li>
 </ol>
 `;
 
-@customElement("web-sarcasam")
-class SarcasamElement extends LitElement {
+@customElement("web-sarcasm")
+class sarcasmElement extends LitElement {
   @property({ type: String })
   prefix = "";
 
@@ -36,11 +36,11 @@ class SarcasamElement extends LitElement {
     console.dir(this.template);
     return html`
       ${this.prefix
-        ? html`<span class="sarcasam-prefix">${this.prefix}</span>`
+        ? html`<span class="sarcasm-prefix">${this.prefix}</span>`
         : ""}
       <slot></slot>
       ${this.suffix
-        ? html`<span class="sarcasam-icon">${this.suffix}</span>`
+        ? html`<span class="sarcasm-icon">${this.suffix}</span>`
         : ""}
       ${this.showTooltip
         ? html`<div class="tooltip">${this.template.content.cloneNode(true)}</div>`
@@ -51,6 +51,6 @@ class SarcasamElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "web-sarcasam": SarcasamElement;
+    "web-sarcasm": sarcasmElement;
   }
 }
